@@ -33,7 +33,7 @@ echo $frutas[0];
 $nombreCompleto = ["nombre" => "Mike","apellido" => "Corleone"];
 echo $nombreCompleto["apellido"];
 
-$nombre = "Clar";
+$nombre = "Clark";
 if ($nombre == "Peter"){
     echo "<p>El nombre es $nombre</p>";
 }else if ($apellido == "Parker"){
@@ -64,18 +64,25 @@ foreach($nombreCompleto as $clave => $valor){
     <h1>Soy el título</h1>
     <?php
 
-        if ($nombre == "Peter"){
-            echo "<img src= 'spiderman.webp' alt='Spiderman'> ";
-        }
-        elseif ($nombre == "Clark") {
-            echo "<img src= 'superman.webp' alt='Superman'> ";
+        // if ($nombre == "Peter"){
+        //     echo "<img src= 'spiderman.webp' alt='Spiderman'> ";
+        // }
+        // elseif ($nombre == "Clark") {
+        //     echo "<img src= 'superman.webp' alt='Superman'> ";
 
-        }
-        else {
-            echo "<img src= 'shin-chan-sqr.webp' alt='Superman'> ";
+        // }
+        // else {
+        //     echo "<img src= 'shin-chan-sqr.webp' alt='Superman'> ";
 
-        }
+        // }
     ?>
 
+    <?php if ($nombre == "Peter"){?>
+        <img src= 'spiderman.webp' alt='Spiderman'> ;
+    <?php }  elseif ($nombre == "Clark") { ?>
+        <img src= 'superman.webp' alt='Superman'>;
+    <?php } else {?>
+        <img src= 'shin-chan-sqr.webp' alt='Superman'>;
+    <?php } ?>
 </body>
 </html>
