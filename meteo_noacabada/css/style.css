@@ -1,0 +1,172 @@
+/* Alineamos el título y el icono horizontalmente */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 30px;
+
+}
+
+h2{
+        margin-top: 1rem ;
+        border-bottom: 2px solid darksalmon;   
+}
+.encabezado {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Ajustamos el tamaño y el espacio entre el icono y el texto */
+.encabezado i {
+    margin-left: 10px;
+    font-size: 30px; /* Tamaño del icono */
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+main section {
+    max-width: inherit;
+  }
+
+main section:nth-child(3){
+    margin-top: 2rem;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.rango {
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+    text-align: center;
+}
+.divClima {
+    display: flex;
+    justify-content: flex-start; /* Alineamos los elementos al inicio */
+    align-items: center;
+    gap: 0; /* Elimina el espacio entre los elementos */
+
+    input[type="text"] {
+        width: 500px; /* Longitud mayor que el select y el boton */
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-top-left-radius: 20px;  /* Borde superior izquierdo redondeado */
+        border-bottom-left-radius: 20px; /* Borde inferior izquierdo redondeado */
+    }
+
+    select {
+        width: 150px; /* Ancho del select */
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Ajustamos el botón de submit */
+    input[type="submit"] {
+        width: 150px; /* Tamaño del botón */
+        padding: 10px;
+        font-size: 14px;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-top-right-radius: 20px; /* Borde superior derecho redondeado */
+        border-bottom-right-radius: 20px; /* Borde inferior derecho redondeado */
+        cursor: pointer;
+    }
+
+    /* Efecto hover para el botón */
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}
+
+.formClima{
+    p {
+        text-align: center;
+    }
+}
+
+#divDatos {
+    display: none;
+    flex-direction: column; /* Apila los divs verticalmente */
+    gap: 10px; /* Espaciado entre los divs */
+    align-items: center; /* Centra los divs horizontalmente */
+    padding: 1rem;
+    img {
+        width: 100px;
+    }
+    text-align: center;
+    background-color: lightblue;
+    }
+
+
+#parametros {
+    font-weight: 600;
+}
+
+.climaPorhoras {
+    width: 100%;
+    border: 2px solid #000; /* Borde negro de 2px */
+    border-radius: 8px; /* Bordes redondeados */ 
+}
+
+#sectionClimaDia{
+    display: none;
+    justify-content: center;  /* Centra el contenido en el eje horizontal */
+    align-items: center;      /* Centra el contenido en el eje vertical */
+    margin-bottom: 2rem;
+
+    /* Opcional: darle un poco de margen y estilo al form */
+form {
+    text-align: center;       /* Centra los elementos dentro del formulario */
+    padding: 20px;            /* Agrega espacio alrededor del formulario */
+    border: 1px solid #ccc;  /* Borde alrededor del formulario */
+    border-radius: 8px;      /* Esquinas redondeadas */
+}
+
+input[type="submit"] {
+    width: 150px; /* Tamaño del botón */
+    padding: 10px;
+    font-size: 14px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-top-right-radius: 20px; /* Borde superior derecho redondeado */
+    border-bottom-right-radius: 20px; /* Borde inferior derecho redondeado */
+    cursor: pointer;
+}
+
+/* Efecto hover para el botón */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+    
+}
+
+#sensacionTermica {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+#otrosParametros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+}
