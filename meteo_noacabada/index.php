@@ -1,3 +1,72 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Meteo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="module" src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div class ="encabezado">
+            <h1>MeteoApp</h1>
+        </div>   
+    </header>
+    <main>
+        <section>
+            <form action="#" name="formClima" class="formClima" method="GET">
+                <p>Introducir ciudad y escoger idioma </p>
+                <div class = "divClima">
+                    <input type="text" 
+                    name="ciudad" 
+                    id="ciudad"
+                    placeholder="Ingrese la ciudad">
+                    <select name="idioma" >
+                        <option value="es" selected>Castellano </option>
+                        <option value="ca" >Catalán</option>
+                        <option value="en" >Inglés</option>
+                    </select>
+                <input type="submit" value="Ver clima ">
+                </div>
+                <div class = "rango">
+                    <label for="range">Seleccione una opción :</label>
+                    <input type="range" 
+                    name="rango" 
+                    id="rangoOpcion" 
+                    min="1" 
+                    max="3"
+                    value = "1">
+                    <span id="opcion">Ahora</span>
+                </div>
+            </form>
+
+            <!-- El usuario elige el día en el que está interesado -->
+            <section id = "sectionClimaDia">
+                <form action="#" name="climaPordias">
+                    <div id="divDias"></div>
+                </form>
+            </section>   
+        </section>
+       
+        <!-- <label for="range">range</label>
+        <input type="range" name="range" id="range" min="1" max="5"> -->
+        <section>
+            <div id="divDatos"></div>
+        </section>
+    </main>
+    
+<span></span>
+    
+
+</body>
+</html>
+
+
+
 <?php
 
 
@@ -82,75 +151,6 @@ if ($rango == "1"){
 
 
 ?>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Meteo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer type="module" src="js/app.js"></script>
-</head>
-<body>
-    <header>
-        <div class ="encabezado">
-            <h1>MeteoApp</h1>
-        </div>   
-    </header>
-    <main>
-        <section>
-            <form action="#" name="formClima" class="formClima" method="GET">
-                <p>Introducir ciudad y escoger idioma </p>
-                <div class = "divClima">
-                    <input type="text" 
-                    name="ciudad" 
-                    id="ciudad"
-                    placeholder="Ingrese la ciudad">
-                    <select name="idioma" >
-                        <option value="es" selected>Castellano </option>
-                        <option value="ca" >Catalán</option>
-                        <option value="en" >Inglés</option>
-                    </select>
-                <input type="submit" value="Ver clima ">
-                </div>
-                <div class = "rango">
-                    <label for="range">Seleccione una opción :</label>
-                    <input type="range" 
-                    name="rango" 
-                    id="rangoOpcion" 
-                    min="1" 
-                    max="3"
-                    value = "1">
-                    <span id="opcion">Ahora</span>
-                </div>
-            </form>
-
-            <!-- El usuario elige el día en el que está interesado -->
-            <section id = "sectionClimaDia">
-                <form action="#" name="climaPordias">
-                    <div id="divDias"></div>
-                </form>
-            </section>   
-        </section>
-       
-        <!-- <label for="range">range</label>
-        <input type="range" name="range" id="range" min="1" max="5"> -->
-        <section>
-            <div id="divDatos"></div>
-        </section>
-    </main>
-    
-<span></span>
-    
-
-</body>
-</html>
-
-
-
 
 
 
